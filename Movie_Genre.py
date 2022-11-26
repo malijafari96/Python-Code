@@ -7,7 +7,7 @@ for i in range(n):
     list_movie.extend(input().split())
 
 # Sample input >>> Action Horror Comedy ... ... ...
-# The number of selected genres does not matter, but the first letter of input words must be capitalized
+# The first letter of input words must be capitalized
 # possible genres to choose are : Action , Comdey , History , Horror , Romance , Adventure
 
 print('Action', ':', list_movie.count('Action'))
