@@ -1,6 +1,6 @@
 import mysql.connector
 cnx = mysql.connector.connect(
-    user='root', password='', host='127.0.0.1', database='karmandan')
+    user='root', password='', host='127.0.0.1', database='Employees')
 
 cursor = cnx.cursor()
 query = 'SELECT * FROM information'
