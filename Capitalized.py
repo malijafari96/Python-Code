@@ -1,5 +1,5 @@
+# this Code find the capitalized Words their position in text
 import re
-# this code find the capitalized words and print the word and it's positon in text
 text = input()
 sentences = re.findall(r"[\w\s,]*[\.\!\?]", text)
 counter = 0
