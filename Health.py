@@ -7,22 +7,22 @@ class School:
 
         n = int(input())
 
-        self.sen = input().split()
-        for i in range(0, len(self.sen)):
-            self.sen[i] = int(self.sen[i])
+        self.age = input().split()
+        for i in range(0, len(self.age)):
+            self.age[i] = int(self.age[i])
 
-        self.ghad = input().split()
-        for j in range(0, len(self.ghad)):
-            self.ghad[j] = int(self.ghad[j])
+        self.height = input().split()
+        for j in range(0, len(self.height)):
+            self.height[j] = int(self.height[j])
 
-        self.vazn = input().split()
-        for k in range(0, len(self.vazn)):
-            self.vazn[k] = int(self.vazn[k])
+        self.weight = input().split()
+        for k in range(0, len(self.weight)):
+            self.weight[k] = int(self.weight[k])
 
     def miangin_kardan(self):
-        print("{:.1f}".format(mean(self.sen)))
-        print("{:.1f}".format(mean(self.ghad)))
-        print("{:.1f}".format(mean(self.vazn)))
+        print("{:.1f}".format(mean(self.age)))
+        print("{:.1f}".format(mean(self.height)))
+        print("{:.1f}".format(mean(self.weight)))
 
 
 A = School()
@@ -31,14 +31,14 @@ B = School()
 A.miangin_kardan()
 B.miangin_kardan()
 
-if mean(A.ghad) > mean(B.ghad):
+if mean(A.height) > mean(B.height):
     print('A')
-if mean(A.ghad) < mean(B.ghad):
+if mean(A.height) < mean(B.height):
     print('B')
-if mean(A.ghad) == mean(B.ghad):
-    if mean(A.vazn) < mean(B.vazn):
+if mean(A.height) == mean(B.height):
+    if mean(A.weight) < mean(B.weight):
         print('A')
-    if mean(A.vazn) > mean(B.vazn):
+    if mean(A.weight) > mean(B.weight):
         print('B')
-    if mean(A.vazn) == mean(B.vazn):
+    if mean(A.weight) == mean(B.weight):
         print('Same')
