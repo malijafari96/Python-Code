@@ -19,7 +19,7 @@ class School:
         for k in range(0, len(self.weight)):
             self.weight[k] = int(self.weight[k])
 
-    def miangin_kardan(self):
+    def average(self):
         print("{:.1f}".format(mean(self.age)))
         print("{:.1f}".format(mean(self.height)))
         print("{:.1f}".format(mean(self.weight)))
@@ -28,8 +28,8 @@ class School:
 A = School()
 B = School()
 
-A.miangin_kardan()
-B.miangin_kardan()
+A.average()
+B.average()
 
 if mean(A.height) > mean(B.height):
     print('A')
