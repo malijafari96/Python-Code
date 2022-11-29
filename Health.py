@@ -8,16 +8,13 @@ class School:
         n = int(input())
 
         self.age = input().split()
-        for i in range(0, len(self.age)):
-            self.age[i] = int(self.age[i])
+        self.age = [int(age) for age in self.age]
 
         self.height = input().split()
-        for j in range(0, len(self.height)):
-            self.height[j] = int(self.height[j])
+        self.height = [int(height) for height in self.height]
 
         self.weight = input().split()
-        for k in range(0, len(self.weight)):
-            self.weight[k] = int(self.weight[k])
+        self.weight = [int(weight) for weight in self.weight]
 
     def average(self):
         print("{:.1f}".format(mean(self.age)))
