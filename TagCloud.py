@@ -1,18 +1,18 @@
 class TagCloud:
     def __init__(self):
-        self.tags = {}
+        self.__tags = {}
 
     def __getitem__(self, tag):
-        return self.tags.get(tag.lower())
+        return self.__tags.get(tag.lower())
 
     def __setitem__(self, tag, count):
-        self.tags[tag.lower()] = count
+        self.__tags[tag.lower()] = count
 
     def __len__(self):
-        return len(self.tags)
+        return len(self.__tags)
 
     def __iter__(self):
-        iter(self.tags)
+        iter(self.__tags)
 
     def add(self, tag):
-        self.tags[tag.lower()] = self.tags.get(tag.lover(), 0) + 1
+        self.__tags[tag.lower()] = self.__tags.get(tag.lover(), 0) + 1
