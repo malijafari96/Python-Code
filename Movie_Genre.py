@@ -4,15 +4,14 @@ n = int(input())
 list_movie = []
 
 for i in range(n):
-    list_movie.extend(input().split())
+    list_movie.extend((input().split()).lower())
 
 # Sample input >>> Action Horror Comedy ... ... ...
-# The first letter of input words must be capitalized
 # possible genres to choose are : Action , Comdey , History , Horror , Romance , Adventure
 
-print('Action', ':', list_movie.count('Action'))
-print('Comedy', ':', list_movie.count('Comedy'))
-print('History', ':', list_movie.count('History'))
-print('Horror', ':', list_movie.count('Horror'))
-print('Romance', list_movie.count('Romance'))
-print('Adventure', ':', list_movie.count('Adventure'))
+print('Action', ':', list_movie.count('action'))
+print('Comedy', ':', list_movie.count('comedy'))
+print('History', ':', list_movie.count('history'))
+print('Horror', ':', list_movie.count('horror'))
+print('Romance', list_movie.count('romance'))
+print('Adventure', ':', list_movie.count('adventure'))
